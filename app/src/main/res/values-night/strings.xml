@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="otop_btn">OTOP</string>
+    <string name="food_otop">Food</string>
+    <string name="drink_otop">Drink</string>
+    <string name="shirt_otop">Shirt</string>
+    <string name="accessories_otop">Accessory</string>
+</resources>

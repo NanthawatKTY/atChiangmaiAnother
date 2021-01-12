@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">atChiangmaiAnother</string>
+    <string name="app_name_2">ChiangmaiAnother</string>
+    <string name="otop_btn"><b>OTOP</b></string>
+    <string name="food_otop"><b>Food</b></string>
+    <string name="drink_otop"><b>Drink</b></string>
+    <string name="shirt_otop"><b>Shirt</b></string>
+    <string name="accessories_otop"><b>Accessory</b></string>
 </resources>
