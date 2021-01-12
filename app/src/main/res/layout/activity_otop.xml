@@ -11,118 +11,135 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <LinearLayout
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            android:orientation="horizontal">
+            android:layout_height="match_parent">
 
-            <GridLayout
-                android:id="@+id/gridCategoryOtop"
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="10dp"
-                android:alignmentMode="alignMargins"
-                android:columnCount="4"
-                android:rowCount="1">
+                android:orientation="vertical" >
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:padding="5dp"
-                    android:orientation="vertical">
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
 
-                    <androidx.cardview.widget.CardView
-                        android:id="@+id/cvFoodOtop"
-                        android:layout_width="60dp"
-                        android:layout_height="50dp"
-                        android:layout_gravity="center_horizontal"
-                        android:foreground="@color/black">
-
-                    </androidx.cardview.widget.CardView>
-
-                    <TextView
-                        android:id="@+id/tvFoodOtop"
+                    <GridLayout
+                        android:id="@+id/gridCategoryOtop"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="@dimen/txt_otop_category"
-                        android:layout_gravity="center_horizontal"
-                        android:text="@string/food_otop" />
+                        android:alignmentMode="alignMargins"
+                        android:columnCount="4"
+                        android:padding="10dp"
+                        android:rowCount="1">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/cvFoodOtop"
+                                android:layout_width="60dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center_horizontal"
+                                android:foreground="@color/black">
+
+                            </androidx.cardview.widget.CardView>
+
+                            <TextView
+                                android:id="@+id/tvFoodOtop"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:text="@string/food_otop"
+                                android:textSize="@dimen/txt_otop_category" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/cvDrinkOtop"
+                                android:layout_width="60dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center_horizontal"
+                                android:foreground="@color/purple_200">
+
+                            </androidx.cardview.widget.CardView>
+
+                            <TextView
+                                android:id="@+id/tvDrinkOtop"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:text="@string/drink_otop"
+                                android:textSize="@dimen/txt_otop_category" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/cvShirtOtop"
+                                android:layout_width="60dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center_horizontal"
+                                android:foreground="@color/purple_500">
+
+                            </androidx.cardview.widget.CardView>
+
+                            <TextView
+                                android:id="@+id/tvShirtOtop"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:text="@string/shirt_otop"
+                                android:textSize="@dimen/txt_otop_category" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/cvAccessoriesOtop"
+                                android:layout_width="60dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center_horizontal"
+                                android:foreground="@color/purple_700">
+
+                            </androidx.cardview.widget.CardView>
+
+                            <TextView
+                                android:id="@+id/tvAccessoriesOtop"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:text="@string/accessories_otop"
+                                android:textSize="@dimen/txt_otop_category" />
+                        </LinearLayout>
+                    </GridLayout>
                 </LinearLayout>
 
-                <LinearLayout
+                <androidx.recyclerview.widget.RecyclerView
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:padding="5dp"
-                    android:orientation="vertical">
+                    android:layout_height="match_parent" />
 
-                    <androidx.cardview.widget.CardView
-                        android:id="@+id/cvDrinkOtop"
-                        android:layout_width="60dp"
-                        android:layout_height="50dp"
-                        android:layout_gravity="center_horizontal"
-                        android:foreground="@color/purple_200">
+            </LinearLayout>
+        </ScrollView>
 
-                    </androidx.cardview.widget.CardView>
-
-                    <TextView
-                        android:id="@+id/tvDrinkOtop"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="@dimen/txt_otop_category"
-                        android:layout_gravity="center_horizontal"
-                        android:text="@string/drink_otop" />
-                </LinearLayout>
-
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:padding="5dp"
-                    android:orientation="vertical">
-
-                    <androidx.cardview.widget.CardView
-                        android:id="@+id/cvShirtOtop"
-                        android:layout_width="60dp"
-                        android:layout_height="50dp"
-                        android:layout_gravity="center_horizontal"
-                        android:foreground="@color/purple_500">
-
-                    </androidx.cardview.widget.CardView>
-
-                    <TextView
-                        android:id="@+id/tvShirtOtop"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="@dimen/txt_otop_category"
-                        android:layout_gravity="center_horizontal"
-                        android:text="@string/shirt_otop" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:padding="5dp"
-                    android:orientation="vertical">
-
-                    <androidx.cardview.widget.CardView
-                        android:id="@+id/cvAccessoriesOtop"
-                        android:layout_width="60dp"
-                        android:layout_height="50dp"
-                        android:layout_gravity="center_horizontal"
-                        android:foreground="@color/purple_700">
-
-                    </androidx.cardview.widget.CardView>
-
-                    <TextView
-                        android:id="@+id/tvAccessoriesOtop"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal"
-                        android:textSize="@dimen/txt_otop_category"
-                        android:text="@string/accessories_otop" />
-                </LinearLayout>
-            </GridLayout>
-        </LinearLayout>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

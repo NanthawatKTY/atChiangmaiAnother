@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AtChiangmaiAnother">
-        <activity android:name=".activities.activity.OTOPActivity"/>
+        <activity android:name=".activities.activity.OTOPActivity" android:parentActivityName=".activities.activity.MainActivity"/>
 
         <activity android:name=".activities.activity.MainActivity">
             <intent-filter>

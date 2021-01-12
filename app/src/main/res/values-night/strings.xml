@@ -5,4 +5,6 @@
     <string name="drink_otop">Drink</string>
     <string name="shirt_otop">Shirt</string>
     <string name="accessories_otop">Accessory</string>
+    <string name="back_ic">Back</string>
+    <string name="otop_cart_ic">OTOP Cart</string>
 </resources>
